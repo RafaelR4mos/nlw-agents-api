@@ -18,6 +18,4 @@ app.register(fastifyCors, {
 app.setSerializerCompiler(serializerCompiler);
 app.setValidatorCompiler(validatorCompiler);
 
-app.listen({ port: env.PORT }).then(() => {
-  console.log("HTTP SERVER RUNNING");
-});
+app.listen({ port: env.PORT });
